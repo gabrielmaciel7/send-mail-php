@@ -26,6 +26,10 @@
 <blockquote>$ git clone https://github.com/gabrielmaciel7/send-mail-php</blockquote>
 <p> Use XAMPP for open index.php in the browser </p>
 <blockquote>https://www.apachefriends.org/</blockquote>
+<p> Insert email and password </p>
+<blockquote>Edit config.php</blockquote>
+<p> Enable less secure app access in email </p>
+<blockquote>https://support.google.com/accounts/answer/6010255?hl=en</blockquote>
 
 <br>
 
