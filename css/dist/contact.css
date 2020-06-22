@@ -1,0 +1,171 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+  /* a cada 1rem será considera 10px */
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: Roboto;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #000;
+}
+
+.section-contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  margin: auto;
+  margin-top: 5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.section-contact .container {
+  position: relative;
+  height: 35rem;
+  display: flex;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-contact .container .contact-form {
+  position: relative;
+  padding: 3rem 9rem;
+  background: #000;
+  border-style: solid;
+  border-width: thin;
+  border-color: #383c40;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+
+.section-contact .container .contact-form h2 {
+  color: #e86138;
+  font-size: 150%;
+}
+
+.section-contact .container .contact-form .form-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.section-contact .container .contact-form .form-box .input-box {
+  position: relative;
+  margin: 0 0 3rem 0;
+  transition: all 0.5s ease;
+}
+
+.section-contact .container .contact-form .form-box .input-box input,
+.section-contact .container .contact-form .form-box .input-box textarea {
+  width: 100% !important;
+  padding: 0.7rem 0;
+  font-size: 90%;
+  color: #f5f7eb;
+  border: none;
+  border-bottom: 0.1rem solid #383c40;
+  font-family: Roboto;
+  outline: none;
+  resize: none;
+  transition: all 0.5s ease;
+  background: #000;
+}
+
+.section-contact .container .contact-form .form-box .input-box input ~ span,
+.section-contact .container .contact-form .form-box .input-box textarea ~ span {
+  color: #f5f7eb;
+}
+
+.section-contact .container .contact-form .form-box .input-box input:focus, .section-contact .container .contact-form .form-box .input-box input:valid,
+.section-contact .container .contact-form .form-box .input-box textarea:focus,
+.section-contact .container .contact-form .form-box .input-box textarea:valid {
+  border-bottom: 0.1rem solid #e86138;
+}
+
+.section-contact .container .contact-form .form-box .input-box input:focus ~ span, .section-contact .container .contact-form .form-box .input-box input:valid ~ span,
+.section-contact .container .contact-form .form-box .input-box textarea:focus ~ span,
+.section-contact .container .contact-form .form-box .input-box textarea:valid ~ span {
+  transform: translateY(-2rem);
+  font-size: 80%;
+  color: #e86138;
+}
+
+.section-contact .container .contact-form .form-box .input-box textarea {
+  min-height: 10rem;
+}
+
+.section-contact .container .contact-form .form-box .input-box .button {
+  position: relative;
+  cursor: pointer;
+  background: #f5f7eb;
+  color: #000;
+  border: none;
+  max-width: 15rem;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  font-size: 100%;
+  float: right;
+}
+
+.section-contact .container .contact-form .form-box .input-box .button:hover {
+  transition: color 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 100%;
+  background: #e86138;
+}
+
+.section-contact .container .contact-form .form-box span {
+  position: absolute;
+  left: 0;
+  padding: 0.7rem 0;
+  font-size: 90%;
+  color: grey;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.section-contact .container .contact-form .form-box .message {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.section-contact .container .contact-form .form-box .message .success {
+  color: #3f7bc4;
+}
+
+.section-contact .container .contact-form .form-box .message .error {
+  color: #e86138;
+}
+
+.section-contact .container .contact-form .form-box .w50 {
+  width: 47%;
+}
+
+.section-contact .container .contact-form .form-box .w100 {
+  width: 100%;
+}
